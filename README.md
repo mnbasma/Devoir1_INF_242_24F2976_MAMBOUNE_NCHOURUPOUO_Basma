@@ -3,31 +3,27 @@
 ## Description
 Ce projet python a pour but d'appliquer les notions abordées par rapport au fontions à plusieurs variables et permettre leur visualisatin tridimentionnelle. L'objectif est d'illustrer graphiquement à l'aide des outils de codage (VSCode dans notre cas) comment l'IMC, la fonction 1, 2 et 3 évoluent en fontion de leurs variables.
 
-## 📐 Analyse Mathématique et Domaines de Définition
+## 📐 Analyse Mathématique et Domaines de Définiton
 
-Pour chaque fonction visualisée, nous avons défini son domaine de définition ($D_f$) dans l'ensemble des réels :
+Pour chaque fonction visualisée, nous avons déterminé son domaine de définition (Df) :
 
-1. **Le Cône** : $f(x,y) = \sqrt{x^2 + y^2}$
-   - **Condition** : $x^2 + y^2 \ge 0$ (Toujours vrai)
-   - **Domaine** : $D_f = \mathbb{R}^2$
+1. **Le Cône** : f(x,y) = racine_carrée(x² + y²)
+   - **Condition** : Toujours définie car x² + y² est toujours positif.
+   - **Domaine** : Df = R² (tous les nombres réels).
 
-2. **Les Ondes Circulaires** : $f(x,y) = \sin(\sqrt{x^2 + y^2})$
-   - **Domaine** : $D_f = \mathbb{R}^2$
+2. **Les Ondes Circulaires** : f(x,y) = sin(racine_carrée(x² + y²))
+   - **Domaine** : Df = R².
 
-3. **La Gaussienne Modifiée** : 
-   $$f(x,y) = (x^2 + 3y^2)e^{-x^2 - y^2}$$
-   - **Domaine** : $D_f = \mathbb{R}^2$
+3. **La Gaussienne Modifiée** : f(x,y) = (x² + 3y²) * exp(-x² - y²)
+   - **Domaine** : Df = R².
 
-4. **Le Sinus Cardinale 2D** : 
-   $$f(x,y) = \frac{\sin x + \sin y}{xy}$$
-   - **Condition** : $xy \neq 0$
-   - **Domaine** : $D_f = \{ (x, y) \in \mathbb{R}^2 \mid x \neq 0, y \neq 0 \}$
+4. **Le Sinus Cardinale 2D** : f(x,y) = (sin x + sin y) / (x * y)
+   - **Condition** : Le dénominateur ne doit pas être nul.
+   - **Domaine** : Df = Tous les points (x, y) sauf quand x = 0 ou y = 0.
 
-5. **L'Indice de Masse Corporelle (IMC)** : 
-   $$IMC = \frac{\text{Masse}}{\text{Taille}^2}$$
-   - **Domaine** : $D_f = ]0 ; +\infty[ \times ]0 ; +\infty[$
-
-
+5. **L'Indice de Masse Corporelle (IMC)** : IMC = Masse / (Taille²)
+   - **Condition** : La taille et la masse doivent être supérieures à 0.
+   - **Domaine** : Taille > 0 et Masse > 0.
 
 ## Fontionnalités
 * **Calcul automatisée**: Utilisation de la formule IMC= masse (kg)/taille^2(m) pour la fontion IMC
